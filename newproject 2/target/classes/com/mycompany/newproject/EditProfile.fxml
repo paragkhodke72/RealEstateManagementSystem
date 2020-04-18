@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="com.mycompany.newproject.EditProfile">
+   <children>
+      <AnchorPane prefHeight="991.0" prefWidth="1411.0">
+         <children>
+            <ImageView fitHeight="1063.0" fitWidth="1598.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/background20.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="1063.0" prefWidth="1432.0">
+               <children>
+                  <Pane layoutX="240.0" layoutY="47.0" opacity="0.9" prefHeight="629.0" prefWidth="1104.0" style="-fx-background-color: #ffffff; -fx-border-color: #0078d7; -fx-border-width: 2;">
+                     <children>
+                        <Button fx:id="saveProfileBtn" layoutX="333.0" layoutY="491.0" mnemonicParsing="false" onAction="#saveProfile" prefHeight="49.0" prefWidth="192.0" style="-fx-background-color: #ffffff;" text="SAVE PROFILE" textFill="#0078d7">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/insurance.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#0078d7" spread="0.5" />
+                           </effect>
+                        </Button>
+                        <Label layoutX="55.0" layoutY="14.0" prefHeight="45.0" prefWidth="276.0" text="Edit Profile">
+                           <font>
+                              <Font name="Impact" size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="42.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/menu%20(1).png" />
+                           </image>
+                           <effect>
+                              <InnerShadow color="WHITE" />
+                           </effect>
+                        </ImageView>
+                        <Button fx:id="switchToSelling" layoutX="924.0" layoutY="-31.0" mnemonicParsing="false" onAction="#switchToSelling" prefHeight="63.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Switch To Selling" textFill="WHITE">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/menu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                           </effect>
+                        </Button>
+                        <PasswordField fx:id="passwordfeild" layoutX="127.0" layoutY="376.0" prefHeight="49.0" prefWidth="589.0" promptText="Password" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0078d7" />
+                           </effect>
+                        </PasswordField>
+                        <TextField fx:id="lastNameFeild" layoutX="127.0" layoutY="173.0" prefHeight="45.0" prefWidth="589.0" promptText="Last Name" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0078d7" />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="ageFeild" layoutX="127.0" layoutY="242.0" prefHeight="45.0" prefWidth="589.0" promptText="Age" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0078d7" />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="emailFeild" layoutX="127.0" layoutY="311.0" prefHeight="45.0" prefWidth="589.0" promptText="Email" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0078d7" />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="firstNameFeild" layoutX="126.0" layoutY="107.0" prefHeight="45.0" prefWidth="589.0" promptText="First Name" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font name="Leelawadee UI Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#0078d7" />
+                           </effect>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="22.0" layoutY="47.0" opacity="0.84" prefHeight="629.0" prefWidth="218.0" style="-fx-background-color: #000000;">
+                     <effect>
+                        <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                     </effect>
+                     <children>
+                        <Pane prefHeight="629.0" prefWidth="218.0">
+                           <children>
+                              <Button fx:id="logoutButton1" layoutX="33.0" layoutY="521.0" mnemonicParsing="false" onAction="#logout" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="LOGOUT" textFill="#f9fcfc">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/power-button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="inquiryButton1" layoutX="31.0" layoutY="363.0" mnemonicParsing="false" onAction="#inquiry" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="Inquiry" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/firefox.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="ownerButton1" layoutX="32.0" layoutY="443.0" mnemonicParsing="false" onAction="#ownerList" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="Profile" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/firefox.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="myPropertiesButton1" layoutX="32.0" layoutY="284.0" mnemonicParsing="false" onAction="#myProperty" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="My Property" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/firefox.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="propertyTypeButton1" layoutX="33.0" layoutY="206.0" mnemonicParsing="false" onAction="#propertyType" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="TYPES" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/equalizer.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="propertyButton1" layoutX="32.0" layoutY="126.0" mnemonicParsing="false" onAction="#listProperties" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="PROPERTIES" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/home.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                              <Button fx:id="dashboardButton1" layoutX="34.0" layoutY="46.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="63.0" prefWidth="151.0" style="-fx-background-color: #000000;" text="DASHBOARD" textFill="WHITE">
+                                 <font>
+                                    <Font name="Leelawadee UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/menu.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <effect>
+                                    <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.5" width="29.9" />
+                                 </effect>
+                              </Button>
+                           </children>
+                           <effect>
+                              <DropShadow color="#0078d7" height="29.9" radius="14.45" spread="0.29" width="29.9" />
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
